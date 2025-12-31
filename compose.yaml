@@ -6,30 +6,35 @@ services:
       - "3306:3306"
     networks:
       - mynet
+
   auth_services:
     image: authimage
     ports:
       - "5001:5001"
     networks:
       - mynet
+
   book_service:
     image: bookimage
     ports:
       - "5002:5002"
     networks:
       - mynet
+
   borrow_service:
     image: borrowimage
     ports:
       - "5003:5003"
     networks:
       - mynet
+
   frontend:
     image: frontimage
     ports:
       - "5000:5000"
     networks:
       - mynet
+
 networks:
   mynet:
     driver: bridge
