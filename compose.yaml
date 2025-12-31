@@ -37,5 +37,5 @@ services:
 
 networks:
   flm_mynet:
-    driver: bridge
+    driver: overlay
     
