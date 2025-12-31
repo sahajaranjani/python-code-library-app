@@ -14,14 +14,14 @@ services:
     networks:
       - flm_mynet
 
-  book_services:
+  book_service:
     image: bookimage
     ports:
       - "5002:5002"
     networks:
       - flm_mynet
 
-  borrow_services:
+  borrow_service:
     image: borrowimage
     ports:
       - "5003:5003"
