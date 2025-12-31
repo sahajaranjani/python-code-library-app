@@ -5,37 +5,37 @@ services:
     ports:
       - "3306:3306"
     networks:
-      - mynet
+      - flm_mynet
 
   auth_services:
     image: authimage
     ports:
       - "5001:5001"
     networks:
-      - mynet
+      - flm_mynet
 
   book_service:
     image: bookimage
     ports:
       - "5002:5002"
     networks:
-      - mynet
+      - flm_mynet
 
   borrow_service:
     image: borrowimage
     ports:
       - "5003:5003"
     networks:
-      - mynet
+      - flm_mynet
 
   frontend:
     image: frontimage
     ports:
       - "5000:5000"
     networks:
-      - mynet
+      - flm_mynet
 
 networks:
-  mynet:
+  flm_mynet:
     driver: bridge
     
