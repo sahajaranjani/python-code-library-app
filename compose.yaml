@@ -7,7 +7,7 @@ services:
     networks:
       - flm_mynet
 
-  auth_services:
+  auth_service:
     image: authimage
     ports:
       - "5001:5001"
