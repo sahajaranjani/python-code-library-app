@@ -7,17 +7,17 @@ services:
     ports:
       - "3306:3306"
 
-  auth:
+  auth_service:
     image: projectkspacee1/myserver:authimage
     ports:
       - "5001:5001"
 
-  book:
+  book_service:
     image: projectkspacee1/myserver:bookimage
     ports:
       - "5002:5002"
 
-  borrow:
+  borrow_service:
     image: projectkspacee1/myserver:borrowimage
     ports:
       - "5003:5003"
