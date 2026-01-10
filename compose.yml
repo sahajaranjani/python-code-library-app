@@ -1,1 +1,33 @@
+version: "3.8"
+
+services:
+
+  db:
+    image: projectkspacee1/myserver:dbimage
+    container_name: dbimage
+    ports:
+      - "3306:3306
+ auth:
+    image: projectkspacee1/myserver:authimage
+    container_name: auth-service
+    ports:
+      - "5001:5001"
+
+  book:
+    image: projectkspacee1/myserver:bookimage
+    container_name: book-service
+    ports:
+      - "5002:5002"
+
+  borrow:
+    image: projectkspacee1/myserver:borrowimage
+    container_name: borrow-service
+    ports:
+      - "5003:5003"
+
+  app:
+    image: projectkspacee1/myserver:appimage
+    container_name: main-app
+    ports:
+      - "5000:5000"
 
