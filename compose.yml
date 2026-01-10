@@ -7,7 +7,7 @@ services:
     image: projectkspacee1/myserver:dbimage
     container_name: dbimage
     ports:
-      - "3306:3306
+      - "3306:3306"
  auth:
     image: projectkspacee1/myserver:authimage
     container_name: auth-service
