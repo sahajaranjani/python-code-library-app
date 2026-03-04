@@ -3,26 +3,26 @@ version: "3.8"
 services:
 
   db:
-    image: projectkspacee1/myserver:dbimage
+    image: projectkspacee1/sahaja2026:dbimage
     ports:
       - "3306:3306"
 
   auth_service:
-    image: projectkspacee1/myserver:authimage
+    image: projectkspacee1/sahaja2026:authimage
     ports:
       - "5001:5001"
 
   book_service:
-    image: projectkspacee1/myserver:bookimage
+    image: projectkspacee1/sahaja2026:bookimage
     ports:
       - "5002:5002"
 
   borrow_service:
-    image: projectkspacee1/myserver:borrowimage
+    image: projectkspacee1/sahaja2026:borrowimage
     ports:
       - "5003:5003"
 
   app:
-    image: projectkspacee1/myserver:appimage
+    image: projectkspacee1/sahaja2026:appimage
     ports:
       - "5000:5000"
